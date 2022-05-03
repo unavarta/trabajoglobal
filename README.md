@@ -17,5 +17,7 @@ Esta es la pagina principal:
 Y este un mockup de la pagina 'Drivers':
 ![imagen](https://user-images.githubusercontent.com/81591028/166533119-7ad11871-1dc4-41b6-80cc-a9bd2d73258d.png)
 --
-
+Y aqui el SiteMap:
+![imagen](https://user-images.githubusercontent.com/81591028/166551949-4d7595c6-b2d4-4533-8557-105f2443e08a.png)
+--
 
