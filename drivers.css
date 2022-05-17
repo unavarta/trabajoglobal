@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: #82cfeb;
+  height: 20vh;
+  width: 100vw;
+  font-size: 18px;
+  display: grid;
+  grid-template-columns: 30% 1fr 30%;
+  margin: auto;
+}
+
+body {
+  background-color: #82cfeb;
+}
+.center-menu {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.right-side {
+  padding-top: 40px;
+  text-align: left;
+}
+.links {
+  font-family: "Inter", sans-serif;
+  position: relative;
+  text-decoration: none;
+  color: rgb(#343434);
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+  padding-bottom: -10px;
+  margin-bottom: -10px;
+
+  transition: color 0.5s;
+}
+.links:visited,
+.links:focus,
+.links:active {
+  text-decoration: none;
+  color: #343434;
+}
+
+.links:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.fangio-logo {
+  padding-top: 30px;
+  font-family: "Fugaz One", cursive;
+  color: #343434;
+  text-align: right;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.drivers {
+  color: #343434;
+  text-align: left;
+  font-family: "Fugaz One", serif;
+  font-size: 60px;
+}
+.main-body {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.col {
+  font-size: 15px;
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  height: 180px;
+  max-height: 180px;
+  margin: 40px;
+  color: #ffffff;
+  text-align: left;
+  background-color: #343434;
+  font-family: "Fugaz One", serif;
+}
+.name{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 25px;
+}
+.number{
+    font-size: 30px;
+    margin-left: 10px;
+}
+img {
+  align-items: center;
+  max-height: 180px;
+}
+
+.fer {
+  background-color: rgb(243, 0, 0);
+}
+
+.bul {
+  background-color: #00178a;
+}
+
+.mer {
+  background-color: aqua;
+}
+.alfa{
+  background-color: #790d0d;
+}
+
+.indep-driver {
+  max-height: 180px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.hhh{
+  background-color: #ffffff;
+}
+button {
+  background-color: #343434;
+  border: none;
+  font-family: "Inter", sans-serif;
+  color: white;
+  max-height: 90px;
+  padding: 0px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition-duration: 0.5s;
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: #343434;
+}
