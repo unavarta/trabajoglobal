@@ -1,10 +1,16 @@
+<?php
+  include_once 'header.php';
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="stylesheets/styles.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -17,21 +23,6 @@
   </head>
   <body>
     
-    <nav>
-      <div>
-        <h2 class="fangio-logo">The Fangio Project</h2>
-      </div>
-      <div class="center-menu">
-        <a class="links" href="./index.html">Home</a>
-        <a class="links" href="./drivers.html">Drivers</a>
-        <a class="links" href="./teams.html">Teams</a>
-        <a class="links" href="">GPs</a>
-      </div>
-      <div class="right-side">
-        <a class="links" href=""><i class="small material-icons">search</i></a>
-        <a class="links" href=""><i class="small material-icons">person</i></a>
-      </div>
-    </nav>
 
     <div class="main-body">
       <div class="body-left-side">

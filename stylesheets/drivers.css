@@ -147,4 +147,9 @@ button {
 button:hover {
   background-color: #ffffff;
   color: #343434;
+  cursor: pointer;
+}
+
+.users{
+  font-family: 'Inter', sans-serif;
 }
