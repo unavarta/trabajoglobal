@@ -24,6 +24,7 @@ nav {
 .right-side{
   padding-top: 40px;
   text-align: left;
+  display: flex;
 }
 body {
   min-height: 80vh;
@@ -239,4 +240,5 @@ button:hover {
 
 .users{
   font-family: 'Inter', sans-serif;
+  height: 25px;
 }

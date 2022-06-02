@@ -28,6 +28,7 @@ body {
 .right-side {
   padding-top: 40px;
   text-align: left;
+  display: flex;
 }
 .links {
   font-family: "Inter", sans-serif;
@@ -103,7 +104,7 @@ body {
     font-size: 30px;
     margin-left: 10px;
 }
-img {
+.grid img {
   align-items: center;
   max-height: 180px;
 }
@@ -117,10 +118,33 @@ img {
 }
 
 .mer {
-  background-color: aqua;
+  background-color: rgb(0, 193, 193);
 }
 .alfa{
   background-color: #790d0d;
+}
+.mc{
+  background-color: #ff8000;
+}
+
+.ren{
+background-color: #0072bb;
+}
+
+.haas{
+  background-color: white;
+}
+
+.tauri{
+  background-color: #00112f;
+}
+
+.aston{
+  background-color: #005950;
+}
+
+.will{
+  background-color:  #00a1e1;
 }
 
 .indep-driver {
@@ -152,4 +176,51 @@ button:hover {
 
 .users{
   font-family: 'Inter', sans-serif;
+  height: 25px;
+}
+
+.dynamic-main{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.image-container{
+  background-color: #242424;
+  width: 250px;
+  height: 250px;
+}
+
+.driver-name{
+  font-size: 50px;
+  font-family: 'Fugaz One', serif;
+  color: #242424;
+}
+
+.driver-portrait{
+  max-width: 250px;
+  width: 250px;
+  align-items: center;
+}
+
+.stats{
+  width: 40%;
+  margin-left: 20px;
+  color: #242424;
+}
+
+.content-cont{
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.stats{
+  font-size: 30px;
+  color: #242424;
+  font-family: 'Inter', sans-serif;
+  width: auto;
+}
+
+.driver-name{
+  text-transform: uppercase;
 }
