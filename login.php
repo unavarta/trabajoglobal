@@ -32,15 +32,14 @@
       </form>
       <br>
       <br>
-      <a class="go-back" href="">Forgot password?</a>
       <a class="go-back" href="./signup.php">Create Account</a>
     <?php
   if(isset($_GET["error"])){
     if($_GET["error"] == "emptyinput"){
-      echo "<p>Fill in all fields!</p>";
+      echo '<script> alert("Fill in all fields!");</script>';
     }
     if($_GET["error"] == "wronglogin"){
-      echo "<p>Wrong password or username.</p>";
+      echo "<script>alert('Wrong password or username.')</script>";
     }
   }
 ?>

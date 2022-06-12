@@ -18,14 +18,12 @@
       <?php
       if(isset($_SESSION["usersname"])){
         echo '<div class="right-side">';
-        echo '<a class="links" href=""><i class="small material-icons">search</i></a>';
-        echo '<a class="links" href="login.php"><i class="small material-icons">person</i></a>';
-        echo '<p class="users">Hi, '. $_SESSION["usersname"] .'. </p>';
+        echo '<a class="links" href="./profile.php?user=' . $_SESSION["usersname"] .''.'"> '. $_SESSION["usersname"] .' </a>';
+        echo '<a class="links" href="./includes/logout.inc.php">Log Out</a>';
         echo '</div>';
       }
       else{
         echo '<div class="right-side">';
-        echo '<a class="links" href=""><i class="small material-icons">search</i></a>';
         echo '<a class="links" href="login.php"><i class="small material-icons">person</i></a>';
         echo '</div>';
       }

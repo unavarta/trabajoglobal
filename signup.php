@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,7 +15,7 @@
     <a class="go-back" href="./index.php">Go Back</a>
   </nav>
   <div class="main-title">
-    <h1>Sign Up.</h1>
+    <h1>SIGN UP.</h1>
   </div>
 
   <div class="main-body">
@@ -55,25 +56,25 @@
     <?php
   if(isset($_GET["error"])){
     if($_GET["error"] == "emptyinput"){
-      echo "<p>Fill in all fields!</p>";
+      echo "<script>alert('Fill in all fields!')</script>";
     }
     if($_GET["error"] == "invaliduid"){
-      echo "<p>Invalid Username. Pick a different one.</p>";
+      echo "<script>alert('Invalid Username. Pick a different one.')</script>";
     }
     if($_GET["error"] == "invalidmail"){
-      echo "<p>Invalid Mail. Choose a proper mail.</p>";
+      echo "<script>alert('Invalid Mail. Choose a proper mail.')</script>";
     }
     if($_GET["error"] == "passnomatch"){
-      echo "<p>Passwords don't match.</p>";
+      echo "<script>alert('Passwords don't match.')</script>";
     }
     if($_GET["error"] == "usernametaken"){
-      echo "<p>Username is taken. Pick another one.</p>";
+      echo "<script>alert('Username is taken. Pick another one.')</script>";
     }
     if($_GET["error"] == "stmtfail"){
-      echo "<p>Something went wrong!</p>";
+      echo "<script>alert('Something went wrong!')</script>";
     }
     if($_GET["error"] == "none"){
-      echo "<p>You have signed up!</p>";
+      echo "<script>alert('You have signed up!')</script>";
     }
   }
 

@@ -95,14 +95,14 @@ body {
   background-color: #343434;
   font-family: "Fugaz One", serif;
 }
-.name{
-    margin-top: 10px;
-    margin-left: 10px;
-    font-size: 25px;
+.name {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 25px;
 }
-.number{
-    font-size: 30px;
-    margin-left: 10px;
+.number {
+  font-size: 30px;
+  margin-left: 10px;
 }
 .grid img {
   align-items: center;
@@ -120,31 +120,31 @@ body {
 .mer {
   background-color: rgb(0, 193, 193);
 }
-.alfa{
+.alfa {
   background-color: #790d0d;
 }
-.mc{
+.mc {
   background-color: #ff8000;
 }
 
-.ren{
-background-color: #0072bb;
+.ren {
+  background-color: #0072bb;
 }
 
-.haas{
+.haas {
   background-color: white;
 }
 
-.tauri{
+.tauri {
   background-color: #00112f;
 }
 
-.aston{
+.aston {
   background-color: #005950;
 }
 
-.will{
-  background-color:  #00a1e1;
+.will {
+  background-color: #00a1e1;
 }
 
 .indep-driver {
@@ -152,7 +152,7 @@ background-color: #0072bb;
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
-.hhh{
+.hhh {
   background-color: #ffffff;
 }
 button {
@@ -174,53 +174,134 @@ button:hover {
   cursor: pointer;
 }
 
-.users{
-  font-family: 'Inter', sans-serif;
+.users {
+  font-family: "Inter", sans-serif;
   height: 25px;
 }
 
-.dynamic-main{
+.dynamic-main {
   margin-left: 15%;
   margin-right: 15%;
+  justify-content: center;
+  align-items: center;
 }
 
-.image-container{
+.image-container {
   background-color: #242424;
   width: 250px;
   height: 250px;
 }
 
-.driver-name{
+.driver-name {
   font-size: 50px;
-  font-family: 'Fugaz One', serif;
+  font-family: "Fugaz One", serif;
   color: #242424;
+  width: 850px;
 }
 
-.driver-portrait{
+.gen-info {
+  font-size: 30px;
+  font-family: "Fugaz One", serif;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #242424;
+  width: 850px;
+  padding-left: 5px;
+}
+
+.driver-portrait {
   max-width: 250px;
   width: 250px;
   align-items: center;
 }
 
-.stats{
+.stats {
   width: 40%;
-  margin-left: 20px;
+  margin-left: 0px;
+  padding-right: 10px;
   color: #242424;
+  font-size: 28px;
+  color: #242424;
+  font-family: "Inter", sans-serif;
+  width: 600px;
+  text-align: left;
 }
 
-.content-cont{
+.content-cont {
   display: flex;
   margin-left: 5%;
   margin-right: 5%;
+  justify-content: center;
 }
 
-.stats{
-  font-size: 30px;
-  color: #242424;
-  font-family: 'Inter', sans-serif;
-  width: auto;
+.title-driver {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
-.driver-name{
+.stats p {
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+.driver-name {
   text-transform: uppercase;
+}
+
+.image-up {
+  width: 250px;
+  height: 30px;
+}
+
+.numbers {
+  font-size: 28px;
+  color: #242424;
+  font-family: "Inter", sans-serif;
+  width: 850px;
+  text-align: left;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 10px 0;
+  min-width: 850px;
+  color: #242424;
+  font-size: 28px;
+}
+
+.styled-table thead tr {
+  background-color: #242424;
+  color: #ffffff;
+  text-align: center;
+  height: 30px;
+  border: 1px 1px 1px 1px solid black;
+  font-size: 20px;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+  font-size: 20px;
+  text-align: center;
+  border: 2px solid #242424;
+}
+.styled-table tbody tr {
+  height: 20px;
+}
+
+.mmm {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+
+.info-change{
+   width: 590px;
+  height: 40px;
+  margin-top: 10px;
 }

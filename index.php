@@ -2,8 +2,6 @@
   include_once 'header.php';
 ?>
 
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,10 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="stylesheets/styles.css" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png" />
@@ -22,8 +17,6 @@
     <title>Home - The Fangio Project</title>
   </head>
   <body>
-    
-
     <div class="main-body">
       <div class="body-left-side">
         <div class="left-container">
@@ -35,8 +28,8 @@
             >
           </p>
           <div class="buttons">
-            <button onclick="location.href='instagram.com'" type="button">Miami GP.</button>
             <button onclick="location.href='instagram.com'" type="button">Spanish GP.</button>
+            <button onclick="location.href='instagram.com'" type="button">Monaco GP.</button>
           </div>
         </div>
       </div>

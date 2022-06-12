@@ -24,8 +24,8 @@ nav {
 .right-side{
   padding-top: 40px;
   text-align: left;
-  display: flex;
 }
+
 body {
   min-height: 80vh;
   height: 100%;
