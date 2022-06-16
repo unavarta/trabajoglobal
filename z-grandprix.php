@@ -1,5 +1,4 @@
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -15,7 +14,7 @@
         require_once './includes/driverDB.inc.php';
         $ID = mysqli_real_escape_string($conn, $_GET['ID']);
 
-        $sql = "SELECT * FROM drivers WHERE driverID='$ID'";
+        $sql = "SELECT * FROM grandprix WHERE gpID='$ID'";
         $result = mysqli_query($conn, $sql) or die();  
         $rowD = mysqli_fetch_array($result);
 
@@ -23,26 +22,24 @@
         header('location: ./index.php');
     }
     ?> 
-        <title><?php echo $rowD['driverName']?></title>
+        <title><?php echo $rowD['gpName']?></title>
     </head>
     <body>
         <div class="dynamic-main">
             <div class="title-driver">
-                <h1 class="driver-name"><?php echo $rowD['driverName']?></h1>
+                <h1 class="driver-name"><?php echo $rowD['gpName']?></h1>
                 <h3 class="gen-info">GENERAL INFORMATION:</h3>
             </div>
             <div class="content-cont">
                 <div class="stats">
-                    <p><strong>Team:</strong> <?php echo $rowD['driverTeam']?></p>
-                    <p><strong>Nationality:</strong> <?php echo $rowD['driverCountry']?></p>
-                    <p><strong>Wins:</strong> <?php echo $rowD['driverWins']?></p>
-                    <p><strong>Points:</strong> <?php echo $rowD['driverPts'] ?></p>
-                    <p><strong>World Championships:</strong> <?php echo $rowD['driverChips']?></p>
-                    <p><strong>Pole Positions:</strong> <?php echo $rowD['driverPoles']?></p>
-                    <p><strong>First Race:</strong> <?php echo $rowD['driverFirst']?></p>
+                    <p><strong>Circuit:</strong> <?php echo $rowD['gpTrack']?></p>
+                    <p><strong>First Race:</strong> <?php echo $rowD['gpFirst']?></p>
+                    <p><strong>Fastest Lap:</strong> <?php echo $rowD['gpFastlap']?></p>
+                    <p><strong>Current Winner:</strong> <?php echo $rowD['gpWinner']?></p>
+                    <p><strong>Most Wins:</strong> <?php echo $rowD['gpMostWins'] ?></p>
                 </div>
                 <div class="image-container">
-                    <img class="driver-portrait" src="./images/drivers/<?php echo $rowD['driverImg']?>" alt="">
+                    <img class="driver-portrait" src="./images/granprix/<?php echo $rowD['gpImg']?>" alt="">
                 </div>
             </div>
             <div class="mmm">
@@ -51,8 +48,8 @@
                     <table class="styled-table">
                         <thead>
                             <tr>
-                                <th>STATISTIC</th>
-                                <th>NUMBER OF</th>
+                                <th>PODIUM FINISH</th>
+                                <th>LAP TIME</th>
                             </tr>
                         </thead>
                         <tbody>

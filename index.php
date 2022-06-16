@@ -1,6 +1,3 @@
-<?php
-  include_once 'header.php';
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,6 +11,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png" />
     <link rel="manifest" href="./images/site.webmanifest" />
+    <?php
+    include_once 'header.php';
+    ?>
+
     <title>Home - The Fangio Project</title>
   </head>
   <body>
@@ -28,8 +29,8 @@
             >
           </p>
           <div class="buttons">
-            <button onclick="location.href='instagram.com'" type="button">Spanish GP.</button>
-            <button onclick="location.href='instagram.com'" type="button">Monaco GP.</button>
+            <button onclick="location.href='z-grandprix.php?ID=7'" type="button">Monaco GP.</button>
+            <button onclick="location.href='z-grandprix.php?ID=8'" type="button">Azerbaiyan GP.</button>
           </div>
         </div>
       </div>
@@ -37,12 +38,12 @@
         <img class="fangio" src="./images/F1-Fangio.jpg" alt="" />
       </div>
     </div>
-    <div class="footer-container">
+    <!-- <div class="footer-container">
       <footer>
         <a class="links" href="">Legal</a>
         <a class="links" href="">Contact</a>
         <a class="links" href="">About Us</a>
-      </footer>
+      </footer> -->
     </div>
   </body>
 </html>

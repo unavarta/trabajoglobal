@@ -12,7 +12,7 @@
         <a class="links" href="./index.php">Home</a>
         <a class="links" href="./drivers.php">Drivers</a>
         <a class="links" href="./teams.php">Teams</a>
-        <a class="links" href="">GPs</a>
+        <a class="links" href="./grandprix.php">GPs</a>
       </div>
       
       <?php

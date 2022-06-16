@@ -305,3 +305,40 @@ button:hover {
   height: 40px;
   margin-top: 10px;
 }
+
+.team-stats {
+  width: 40%;
+  margin-left: 0px;
+  color: #242424;
+  font-size: 28px;
+  color: #242424;
+  font-family: "Inter", sans-serif;
+  width: 850px;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top:10px;
+}
+
+.team-stats p {
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+.team-image-container{
+  align-items: center;
+  max-width: 850px;
+}
+.team-portrait{
+  max-width: 850px;
+}
+.team-content-cont {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.team-dynamic-main {
+  margin-left: 15%;
+  margin-right: 15%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
