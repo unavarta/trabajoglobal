@@ -11,7 +11,7 @@
   include_once 'header.php';
 ?>
 
-    <title>Drivers - The Fangio Project</title>
+    <title>Teams - The Fangio Project</title>
 </head>
 
 <body>
@@ -97,5 +97,4 @@
 
         </div>
 </body>
-
 </html>

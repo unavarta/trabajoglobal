@@ -48,22 +48,22 @@
                     <table class="styled-table">
                         <thead>
                             <tr>
-                                <th>PODIUM FINISH</th>
-                                <th>LAP TIME</th>
+                                <th>PODIUM</th>
+                                <th>DRIVER</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th>OVERTAKES</th>
-                                <td>50</td>
+                                <th>FIRST</th>
+                                <td><?php echo $rowD['podiumOne'];?></td>
                             </tr>
                             <tr>
-                                <th>DNFS</th>
-                                <td>2</td>
+                                <th>SECOND</th>
+                                <td><?php echo $rowD['podiumTwo'];?></td>
                             </tr>
                             <tr>
-                                <th>PODIUMS</th>
-                                <td>3</td>
+                                <th>THREE</th>
+                                <td><?php echo $rowD['podiumThree'];?></td>
                             </tr>
                         </tbody>
                     </table>

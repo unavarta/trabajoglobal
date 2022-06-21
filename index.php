@@ -31,6 +31,7 @@
           <div class="buttons">
             <button onclick="location.href='z-grandprix.php?ID=7'" type="button">Monaco GP.</button>
             <button onclick="location.href='z-grandprix.php?ID=8'" type="button">Azerbaiyan GP.</button>
+            <a href="./01.php">prueba</a>
           </div>
         </div>
       </div>

@@ -24,24 +24,24 @@
       <!-- este es el correo -->
       <label class="label" for="#mail">Mail</label>
       <br />
-      <input class="input-box" type="text" name="mail" id="#mail" />
+      <input class="input-box" type="text" name="mail" id="#mail"  autocomplete="off"  />
       <br />
       <br>
       <!-- este es el username -->
       <label class="label" for="#mail">Username</label>
       <br />
-      <input class="input-box" type="text" name="user" id="#username" />
+      <input class="input-box" type="text" name="user" id="#username" autocomplete="off"  />
       <br>
       <br>
       <!-- este es la contrase;a -->
       <label class="label" for="#pass">Password</label>
       <br />
-      <input class="input-box" type="password" name="pass" id="#pass" />
+      <input class="input-box" type="password" name="pass" id="#pass"  autocomplete="off" />
       <br>
       <br>
       <label class="label" for="#passrpt">Repeat Password</label>
       <br />
-      <input class="input-box" type="password" name="passRepeat" id="#passrpt" />
+      <input class="input-box" type="password" name="passRepeat" id="#passrpt" autocomplete="off"  />
       <br>
       <br />
       <button class="login" type="submit" name="submit">Sign Up</button>
