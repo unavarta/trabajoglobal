@@ -413,3 +413,23 @@ button:hover {
   text-align: center;
   justify-content: center;
 }
+
+.view-stats{
+  font-family: "Inter", sans-serif;
+  position: relative;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 0.5px;
+  padding: 32px 82px 32px 82px;
+  transition: color 0.5s;
+}
+
+.view-stats:hover{
+  color: #242424;
+}
+
+.view-stats:visited,
+.view-stats:focus,
+.view-stats:active {
+  text-decoration: none;
+}

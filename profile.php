@@ -34,6 +34,13 @@
                 <p><strong>Favourite Team: <?php echo $row["favTeam"]; ?></strong></p>
                 <p><strong>Favourite Driver: <?php echo $row["favDriver"]; ?></strong></p>
                 <button class="info-change" onclick="location.href='./crud/limit-up-user.php?updateid=<?php echo $row['usersID']?>'">Update Info</button>
+                <?php 
+                if($row['tipo'] == 1){
+                    echo '<button class="info-change"><a class="view-statss" href="./crud/display-user.php">User Managment</a></button>';
+                }else{
+
+                }
+                ?>            
             </div>
             
             <div>

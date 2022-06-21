@@ -141,13 +141,27 @@
             header("location: ../login.php?error=wronglogin");
             exit(); 
         }else if($checkPwd === true){
-            session_start();
-            $_SESSION["usersid"] =  $uidExists["usersID"];
-            $_SESSION["usersname"] =  $uidExists["usersName"];
-            $_SESSION["usersmail"] = $uidExists["usersMail"];
-            header("location: ../index.php");
-            exit();
+            
+            if($username == 'admin'){
+                header("location: ../crud/display-user.php"); 
+                session_start();
+                $_SESSION["usersid"] =  $uidExists["usersID"];
+                $_SESSION["usersname"] =  $uidExists["usersName"];
+                $_SESSION["usersmail"] = $uidExists["usersMail"];
+                exit();
+
+            }else{
+                header("location: ../index.php");   
+                session_start();
+                $_SESSION["usersid"] =  $uidExists["usersID"];
+                $_SESSION["usersname"] =  $uidExists["usersName"];
+                $_SESSION["usersmail"] = $uidExists["usersMail"];
+                exit();
+            }
+        
+            
         }
+
     }
 
 
