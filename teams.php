@@ -17,84 +17,84 @@
 <body>
 
     <div class="main-body">
-        <p class="drivers">Meet the Teams</p>
+        <div class="namensearch">
+            <p class="drivers">Meet the Teams</p>
+            <form class="search" action="teams.php" method="POST">
+                <input type="text" name="search" placeholder="Search for Team">
+                <input type="submit" value="Search">
+            </form>
+        </div>
 
         <div class="grid">
-            <div class="col">
-                <div>
-                    <img class="fer" src="./images/teams/fe.png" alt="" />
-                </div>
-                <div class="indep-driver">
-                    <p class="name">Ferrari<br />Italy</p>
-                    <button onclick="location.href='z-team.php?ID=1'" type="button">View Stats</button>
-                </div>
-            </div>
-            <div class="col">
-                <div>
-                    <img class="bul" src="./images/teams/red bull.png" alt="" />
-                </div>
-                <div class="indep-driver">
-                    <p class="name">Red Bull<br />Austria</p>
-                    <button onclick="location.href='z-team.php?ID=2'" type="button">View Stats</button>
-                </div>
-            </div>
-            <div class="col">
-                <img class="mer" src="./images/teams/mb.png" alt="" />
-                <div class="indep-driver">
-                    <p class="name">Mercedes-Benz<br />Germany</p>
-                    <button onclick="location.href='z-team.php?ID=3'" type="button">View Stats</button>
-                </div>
-            </div>
-            <div class="col">
-                <img src="./images/teams/mc.png " alt="" />
-                <div class="indep-driver">
-                    <p class="name">McLaren<br />England</p>
-                    <button onclick="location.href='z-team.php?ID=4'" type="button">View Stats</button>
-                </div>
-            </div>
-            <div class="col">
-                <img class="alfa" src="./images/teams/alfa.png" alt="" />
-                <div class="indep-driver">
-                    <p class="name">Alfa Romeo<br />Italy</p>
-                    <button onclick="location.href='z-team.php?ID=5'" type="button">View Stats</button>
-                </div>
-            </div>
-            <div class="col">
-                <img class="mer" src="./images/teams/logo-alpine-f1-2021.png" alt="" />
-                <div class="indep-driver">
-                    <p class="name">Alpine<br />France</p>
-                    <button onclick="location.href='z-team.php?ID=6'" type="button">View Stats</button>
-                </div>
-            </div>
-            <div class="col">
-                <img class="mer" src="./images/teams/fb_launch_negative_big.jpg" alt="" />
-                <div class="indep-driver">
-                    <p class="name">AlphaTauri<br />Italy</p>
-                    <button onclick="location.href='z-team.php?ID=7'" type="button">View Stats</button>
-                </div>
-            </div>
-            <div class="col">
-                <img class="hhh" src="./images/teams/haas-f1-team-logo.png" alt="" />
-                <div class="indep-driver">
-                    <p class="name">Haas<br />United States</p>
-                    <button onclick="location.href='z-team.php?ID=8'" type="button">View Stats</button>
-                </div>
-            </div>
-            <div class="col">
-                <img class="mer" src="./images/teams/logo-aston-martin-f1-2021.png" alt="" />
-                <div class="indep-driver">
-                    <p class="name">Aston Martin<br />England</p>
-                    <button onclick="location.href='z-team.php?ID=9'" type="button">View Stats</button>
-                </div>
-            </div>
-            <div class="col">
-                <img class="mer" src="./images/teams/logo-williams-f1-2021.png" alt="" />
-                <div class="indep-driver">
-                    <p class="name">Williams<br />England</p>
-                    <button onclick="location.href='z-team.php?ID=10'" type="button">View Stats</button>
-                </div>
-            </div>
+            <?php 
+        require_once './includes/driverDB.inc.php';
+        $resultsPage = 4;
 
+        $sql = "SELECT * FROM teams";
+        $result = mysqli_query($conn, $sql);  
+        $numResults = mysqli_num_rows($result);
+
+        $numPages = ceil($numResults / $resultsPage);
+
+        if(!isset($_GET['page'])){
+            $page = 1;
+        }else{
+            $page = $_GET['page'];
+        }
+     
+        if(isset($_POST['search'])){
+            $searchTeam = $_POST['search'];
+            $sql = "SELECT * FROM teams WHERE teamName LIKE '%$searchTeam%'";
+
+            $result = mysqli_query($conn, $sql) or die();
+            $count = mysqli_num_rows($result);
+            if($count == 0){
+                echo '<p class="no-search">No search results.</p>';
+            }else{
+                while($row1 = mysqli_fetch_assoc($result)){
+                    echo    '<div class="col">
+                                <div>
+                                    <img class="'. $row1['teamClass'] .'" src="./images/teams/'. $row1['teamLOGO'].'" alt="" />
+                                </div>
+                                <div class="indep-driver">
+                                    <p class="name">'. $row1['teamName'].'</p>
+                                    <button type="button"><a class="view-stats" href="./z-team.php?ID='. $row1['teamID'].'">View Stats</a></button>
+                                </div>
+                            </div>';
+                }
+            }
+        
+    }else{
+        
+        $firstResult = ($page - 1) * $resultsPage; 
+
+        $sql = "SELECT * FROM teams LIMIT $firstResult,4 ";
+        $result = mysqli_query($conn, $sql);
+
+        while($row1 = mysqli_fetch_assoc($result)){
+            echo '<div class="col">
+                        <div>
+                            <img class="'. $row1['teamClass'] .'" src="./images/teams/'. $row1['teamLOGO'].'" alt="" />
+                        </div>
+                        <div class="indep-driver">
+                            <p class="name">'. $row1['teamName'].'</p>
+                            <button type="button"><a class="view-stats" href="./z-team.php?ID='. $row1['teamID'].'">View Stats</a></button>
+                            </div>
+                    </div>';
+        }
+        echo '</div>
+        <div class="footer-pages">';
+        
+        for($page=1; $page<=$numPages; $page++){
+            echo '<a class="pages" href="teams.php?page='. $page.'">'. $page .' </a>';
+
+        } 
+    }
+        ?>
+    
         </div>
+    </div>
+    </div>
 </body>
+
 </html>

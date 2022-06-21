@@ -21,6 +21,7 @@
                 <input type="text" name="search" placeholder="Search for Driver">
                 <input type="submit" value="Search">
             </form>
+
         </div>
         <div class="grid">
             <?php 

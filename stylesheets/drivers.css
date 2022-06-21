@@ -342,3 +342,74 @@ button:hover {
   align-items: center;
   margin-bottom: 20px;
 }
+
+.view-stats{
+  font-family: "Inter", sans-serif;
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+  padding: 32px 82px 32px 82px;
+  transition: color 0.5s;
+}
+
+.view-stats:hover{
+  color: #242424;
+}
+
+.view-stats:visited,
+.view-stats:focus,
+.view-stats:active {
+  text-decoration: none;
+}
+
+.pages{
+  font-family: "Inter", sans-serif;
+  position: relative;
+  text-decoration: none;
+  color: #242424;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+  transition: color 0.5s;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 30px;
+}
+
+.pages:hover{
+  color: white;
+}
+
+.pages:visited,
+.pages:focus,
+.pages:active {
+  text-decoration: none;
+}
+
+.footer-pages{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.namensearch{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.search{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.no-search{
+  font-family: 'Inter', sans-serif;
+  color: #343434;
+  font-size: 30px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}

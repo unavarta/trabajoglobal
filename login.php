@@ -17,7 +17,21 @@
 
     <div class="main-body">
 
-    <form action="./includes/login.inc.php" method="post">
+    <script>
+        function checkBlank(){
+
+          if(document.getElementById('mail').value == ""){
+              alert('Please enter email.')
+              return false;  
+          }
+           
+          if(document.getElementById('pass').value == ""){
+            alert('Please enter password.')
+          }
+        }
+      </script>
+
+    <form action="./includes/login.inc.php" method="post" onsubmit="checkBlank()">
       <label class="label" for="#mail">Username or Email</label>
       <br />
       <input class="input-box" type="text" name="uid" id="#mail" />
@@ -33,6 +47,9 @@
       <br>
       <br>
       <a class="go-back" href="./signup.php">Create Account</a>
+    
+      
+    
     <?php
   if(isset($_GET["error"])){
     if($_GET["error"] == "emptyinput"){
