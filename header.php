@@ -25,7 +25,7 @@
         <?php
       if(isset($_SESSION["usersname"])){
         echo '<div class="right-side">';
-        echo '<a class="links" href="./profile.php?user=' . $_SESSION["usersname"] .''.'"> '. $_SESSION["usersname"] .' </a>';
+        echo '<a class="links" href="./profile.php"> '. $_SESSION["usersname"] .' </a>';
         echo '<a class="links" href="./includes/logout.inc.php">Log Out</a>';
         echo '</div>';
       }

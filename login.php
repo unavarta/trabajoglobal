@@ -44,10 +44,14 @@
       <br>
       <button class="login" type="submit" name="submit">Log In</button>
       </form>
+      
+      <br>
+      <input type="checkbox" name="remember" id="remember">
+      <label for="remember">Remember Me</label>
       <br>
       <br>
       <a class="go-back" href="./signup.php">Create Account</a>
-    
+      <br>
       
     
     <?php

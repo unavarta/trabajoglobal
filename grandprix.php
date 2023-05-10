@@ -39,19 +39,28 @@
                 </div>
             </div>
             <div class="col">
-                <img src="./images/granprix/flags/monaco.jpg" alt="" />
+                <img src="./images/granprix/flags/aus.png" alt="" />
                 <div class="indep-driver">
-                    <p class="name">Monaco GP<br/>Montecarlo</p>
-                    <button onclick="location.href='z-grandprix.php?ID=7'" type="button">View Stats</button>
+                    <p class="name">Australian GP<br/>Melbourne</p>
+                    <button onclick="location.href='z-grandprix.php?ID=3'" type="button">View Stats</button>
                 </div>
             </div>
+            
             <div class="col">
                 <img src="./images/granprix/flags/azerbaijan.png" alt="" />
                 <div class="indep-driver">
                     <p class="name">Azerbaijan GP<br/>Baku</p>
-                    <button onclick="location.href='z-grandprix.php?ID=8'" type="button">View Stats</button>
+                    <button onclick="location.href='z-grandprix.php?ID=4'" type="button">View Stats</button>
                 </div>
             </div>
+            <div class="col">
+                <img src="./images/granprix/flags/miami.png" alt="" />
+                <div class="indep-driver">
+                    <p class="name">Miami GP<br/>Miami Gardens</p>
+                    <button onclick="location.href='z-grandprix.php?ID=5'" type="button">View Stats</button>
+                </div>
+            </div>
+        
         </div>
 </body>
 </html>

@@ -1,9 +1,9 @@
 <?php
     include './header.php';
-    if(isset($_GET['user'])){
+    if(isset($_SESSION['usersname'])){
 
         require_once './includes/driverDB.inc.php';
-        $ID = mysqli_real_escape_string($conn, $_GET['user']);
+        $ID = mysqli_real_escape_string($conn, $_SESSION['usersname']);
     
         $sql = "SELECT * FROM users WHERE usersName='$ID'";
         $result = mysqli_query($conn, $sql) or die();  

@@ -9,6 +9,9 @@ if(isset($_POST['submit'])){
     $driver = $_POST['favDriver'];
     $team = $_POST['favTeam'];
     $image = $_FILES['my-image']['name'];
+    $target_dir = "../images/profile/";
+    $target_file = $target_dir . basename($_FILES["my-image"]["name"]);
+    move_uploaded_file($_FILES["my-image"]["tmp_name"], $target_file);
     $sql = "UPDATE `users` SET usersID=$update, favDriver='$driver', favTeam='$team', imgUrl='$image' where usersID = $update";
     $result = mysqli_query($conn, $sql);
     if($result){

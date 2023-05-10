@@ -28,8 +28,8 @@
                         important motorsport.</em>
                 </p>
                 <div class="buttons">
-                    <button onclick="location.href='z-grandprix.php?ID=7'" type="button">Monaco GP.</button>
-                    <button onclick="location.href='z-grandprix.php?ID=8'" type="button">Azerbaiyan GP.</button>
+                    <button onclick="location.href='z-grandprix.php?ID=4'" type="button">Azerbaiyan GP.</button>
+                    <button onclick="location.href='z-grandprix.php?ID=5'" type="button">Miami GP.</button>
 
                 </div>
             </div>

@@ -43,7 +43,7 @@
                 </div>
             </div>
             <div class="mmm">
-                <h3 class="gen-info">SEASON STATS:</h3>
+                <h3 class="gen-info">PODIUM FINISH:</h3>
                 <div class="numbers">
                     <table class="styled-table">
                         <thead>

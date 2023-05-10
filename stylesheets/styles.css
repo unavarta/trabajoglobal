@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 nav {
@@ -71,8 +72,15 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  transition: all 0.3s ease;
+  transform: scale(1);
+  
 }
-
+.fangio-logo:hover{
+  transition: all 0.3s ease;
+		transform: scale(1.2);
+		color: white;
+}
 .main-body {
   background-color: #82cfeb;
   display: flex;

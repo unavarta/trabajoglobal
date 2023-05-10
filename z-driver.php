@@ -44,33 +44,6 @@
                     <img class="driver-portrait" src="./images/drivers/<?php echo $rowD['driverImg']?>" alt="">
                 </div>
             </div>
-            <div class="mmm">
-                <h3 class="gen-info">SEASON STATS:</h3>
-                <div class="numbers">
-                    <table class="styled-table">
-                        <thead>
-                            <tr>
-                                <th>STATISTIC</th>
-                                <th>NUMBER OF</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>OVERTAKES</th>
-                                <td>50</td>
-                            </tr>
-                            <tr>
-                                <th>DNFS</th>
-                                <td>2</td>
-                            </tr>
-                            <tr>
-                                <th>PODIUMS</th>
-                                <td>3</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
             
         </div>
     </body>

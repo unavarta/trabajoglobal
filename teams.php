@@ -68,7 +68,7 @@
         
         $firstResult = ($page - 1) * $resultsPage; 
 
-        $sql = "SELECT * FROM teams LIMIT $firstResult,4 ";
+        $sql = "SELECT * FROM `teams` ORDER BY `sznPoints` DESC LIMIT $firstResult,4 ";
         $result = mysqli_query($conn, $sql);
 
         while($row1 = mysqli_fetch_assoc($result)){

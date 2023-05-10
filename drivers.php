@@ -55,6 +55,7 @@
                                     </div>
                                     <div class="indep-driver">
                                         <p class="name">'. $row1['driverName'].'</p>
+                                        
                                         <button type="button"><a class="view-stats" href="./z-driver.php?ID='. $row1['driverID'].'">View Stats</a></button>
                                         </div>
                                 </div>';
@@ -64,7 +65,7 @@
         }else{
             $firstResult = ($page - 1) * $resultsPage; 
 
-            $sql = "SELECT * FROM drivers LIMIT $firstResult ,6 ";
+            $sql = "SELECT * FROM `drivers` ORDER BY `sznPoints` DESC LIMIT $firstResult ,6  ";
             $result = mysqli_query($conn, $sql);
     
             while($row1 = mysqli_fetch_assoc($result)){
